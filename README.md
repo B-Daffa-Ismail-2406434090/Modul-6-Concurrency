@@ -25,3 +25,7 @@ new content of handle_connection:
 - Membaca baris pertama request
 - Berdasarkan path request, kita conditionally set status_line & filename yang ditulis
 - Respond dengan status_line & filename yang telah disesuaikan
+
+## Commit 4 Reflection notes
+
+By adding sleep we can see how loading other pages is stalled by the /sleep page load
