@@ -18,3 +18,10 @@ new content of handle_connection:
 - Get the length of the file contents
 - Build and format an http response with a status line, html page, and content length
 - Write the http response to the stream so the client receives it
+
+## Commit 3 Reflection notes
+
+new content of handle_connection:
+- Membaca baris pertama request
+- Berdasarkan path request, kita conditionally set status_line & filename yang ditulis
+- Respond dengan status_line & filename yang telah disesuaikan
