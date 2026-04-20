@@ -29,3 +29,12 @@ new content of handle_connection:
 ## Commit 4 Reflection notes
 
 By adding sleep we can see how loading other pages is stalled by the /sleep page load
+
+## Commit 5 Reflection notes
+
+Created a threadpool containing a max of 4 threads. Pool has a method to execute a job (code), the job being handle_connection function.
+
+Execute method places the job in a queue (mpsc) for idle workers to take and run. Once finished running, worker is idle again and takes the next job waiting in queue.
+
+This setup allows handling of multiple requests using multi threading, solving the problem caused by /sleep.
+
