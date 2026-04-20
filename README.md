@@ -7,9 +7,11 @@ content of handle_connection:
 - Gathers all lines into a Vector of strings
 - The vector, which now contains an http requests, is printed
 
-![Commit 2 screen capture](commit2.png)
+
 
 ## Commit 2 Reflection notes
+
+![Commit 2 screen capture](commit2.png)
 
 new content of handle_connection:
 - Same reading http request logic as commit 1 but no printing
@@ -38,3 +40,6 @@ Execute method places the job in a queue (mpsc) for idle workers to take and run
 
 This setup allows handling of multiple requests using multi threading, solving the problem caused by /sleep.
 
+## Commit Bonus Reflection notes
+
+Build method returns a result enum object which returns threadpool if successful or errors if unsuccessful
